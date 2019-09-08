@@ -1,5 +1,6 @@
 # base image
-FROM node:slim
+ARG TAG=slim
+FROM node:$TAG
 
 # setting the work direcotry
 WORKDIR /usr/src/app

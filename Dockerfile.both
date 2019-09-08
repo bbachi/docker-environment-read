@@ -1,8 +1,13 @@
 # base image
-FROM node:slim
+ARG TAG=slim
+FROM node:$TAG
+
+ARG PORT_ARG=3080
 
 # setting the work direcotry
 WORKDIR /usr/src/app
+
+ENV PORT=$PORT_ARG
 
 # copy package.json
 COPY ./package.json .
