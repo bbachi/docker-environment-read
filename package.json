@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/bbachi/docker-environment-read#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
